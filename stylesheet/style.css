@@ -1,3 +1,131 @@
-body{
-  font-family: "Pixelify Sans", sans-serif;
+
+
+
+:root {
+      --primary-color: #f2d88f;
+      --secondary-color: #d34f5a;
+      --title-color: #4d290b;
+      --font-family: "Pixelify Sans", sans-serif;
+      --font-size-title: 40px;
+      --font-weight-btn: bold;
+      --background-btn-color: #f2ca8f;
+      --border-color-org: #f08c21;
+      --brown-color: #4d290b;
+    }
+
+*{
+box-sizing: border-box;
+font-family: var(--font-family);
 }
+
+body{
+  
+  background-color: var(--primary-color);
+  
+
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border-color-org);
+  max-width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url('../images/bg.jpg');
+  background-size: 100% 100%;
+  box-shadow:  8px 8px 20px #e9a167;
+  
+  
+
+
+}
+
+.title{
+  color: var(--title-color);
+  font-size: var(--font-size-title);
+  /*margin-bottom: 50px;*/
+  
+  
+}
+
+.t2{
+  color: var(--secondary-color);
+  font-size: 22px;
+  /*margin-bottom: 200px;*/
+  border: 3px solid var(--border-color-org);
+  padding: 10px;
+  background-color: var(--primary-color);
+  box-shadow:  8px 8px 0px var(--brown-color);
+}
+
+.start-btn{
+  list-style: none;
+  padding: 8px 30px;
+  font-size: 25px;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-btn);
+  background-color: var(--background-btn-color);
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+
+}
+
+.start-btn:hover{
+  transform: scale(1.2);
+
+}
+
+
+.menu-options{
+  
+
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;      /* allows cards to wrap on smaller screens */
+  gap: 20px;            /* space between cards */
+  padding: 20px;
+  
+
+
+}
+
+.card-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card {
+  width: 180px;
+  border: 1px solid var(--border-color-org);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  background-color: #fff;
+  
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+}
+
+.menu-btn{
+
+  list-style: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1.8px solid var(--brown-color);
+  background-color: var(--primary-color);
+  color: var(--brown-color);
+  font-weight: var(--font-weight-btn);
+  background-color: var(--background-btn-color);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
