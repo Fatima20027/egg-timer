@@ -4,7 +4,7 @@
 :root {
       --primary-color: #f2d88f;
       --secondary-color: #d34f5a;
-      --title-color: #4d290b;
+      --title-color: #311a06;
       --font-family: "Pixelify Sans", sans-serif;
       --font-size-title: 40px;
       --font-weight-btn: bold;
@@ -47,7 +47,8 @@ body{
 .title{
   color: var(--title-color);
   font-size: var(--font-size-title);
-  /*margin-bottom: 50px;*/
+  
+  
   
   
 }
@@ -55,16 +56,21 @@ body{
 .t2{
   color: var(--secondary-color);
   font-size: 22px;
-  /*margin-bottom: 200px;*/
   border: 3px solid var(--border-color-org);
   padding: 10px;
   background-color: var(--primary-color);
   box-shadow:  8px 8px 0px var(--brown-color);
+  
+}
+
+.start-t2{
+  position: relative;
+  top: -30.3%;
 }
 
 .start-btn{
   list-style: none;
-  padding: 8px 30px;
+  padding: 8px 40px;
   font-size: 25px;
   border: 3px solid var(--secondary-color);
   background-color: var(--primary-color);
@@ -73,11 +79,14 @@ body{
   background-color: var(--background-btn-color);
   cursor: pointer;
   transition: transform 0.4s ease-out;
+  position: relative;
+  top: 20px;
+  
 
 }
 
 .start-btn:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 
 }
 
@@ -88,8 +97,8 @@ body{
 
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;      /* allows cards to wrap on smaller screens */
-  gap: 20px;            /* space between cards */
+  flex-wrap: wrap;      
+  gap: 20px;            
   padding: 20px;
   
 
@@ -129,3 +138,18 @@ body{
 }
 
 
+#counter{
+  font-size: 45px;
+  font-weight: var(--font-weight-btn);
+  color: var(--brown-color);
+}
+
+
+
+#display {
+  width: 230px;   
+  height: 230px;  
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto; 
+}
