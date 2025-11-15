@@ -5,7 +5,7 @@
 
 
 const times = {
-  soft: 1,
+  soft: 240,
   jammy: 360,
   hard: 480,
   extra: 600
