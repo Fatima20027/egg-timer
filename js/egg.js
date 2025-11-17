@@ -57,3 +57,18 @@ startTimer(eggType);
 
 
 
+
+const bottonSound = document.querySelectorAll('button');
+const clickSound = document.querySelector('audio');
+
+function clickBottonSound(){
+
+  clickSound.currentTime = 0;
+  clickSound.play();
+
+}
+
+bottonSound.forEach(element => {
+    element.addEventListener('click', clickBottonSound);
+    
+  });

@@ -40,6 +40,7 @@ body{
   box-shadow:  8px 8px 20px #e9a167;
   
   
+  
 
 
 }
@@ -47,6 +48,7 @@ body{
 .title{
   color: var(--title-color);
   font-size: var(--font-size-title);
+  text-align: center;
   
   
   
@@ -152,4 +154,73 @@ body{
   object-fit: contain; 
   display: block;
   margin: 0 auto; 
+}
+
+
+@media (max-width: 767px){
+  .container{
+    max-width: 400px;
+    margin-top: 50%;
+  
+    
+  }
+
+  .start-t2{
+    top: -15%
+  }
+
+  .card {
+  width: 120px;
+  
+  
+  
+}
+
+.card-image {
+  height: 85px;
+  
+}
+
+.menu-btn{
+
+  
+  padding: 5px 5px;
+  font-size: 12px;
+  
+  margin-bottom: 5px;
+}
+
+.menu-options{   
+  gap: 30px;            
+  padding: 30px;
+
+}
+
+#display {
+  width: 150px;   
+  height: 150px;  
+  
+}
+
+#alert{
+  font-size: 25px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .container{
+    
+    margin-top: 30%;
+  
+    
+  }
+
+
+}
+
+@media (min-width: 1024px){
+
+  
+
 }
