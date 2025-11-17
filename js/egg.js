@@ -61,10 +61,21 @@ startTimer(eggType);
 const bottonSound = document.querySelectorAll('button');
 const clickSound = document.querySelector('audio');
 
-function clickBottonSound(){
+function clickBottonSound(e){
+  const link = e.target.closest('a');
+  if(e.target.tagName === 'BUTTON' && e.target.closest('a')){
+    e.preventDefault();
+    clickSound.currentTime = 0;
+    clickSound.play();
 
-  clickSound.currentTime = 0;
-  clickSound.play();
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 150);
+
+
+  }
+
+  
 
 }
 
