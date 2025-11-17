@@ -15,6 +15,7 @@ const counter = document.getElementById('counter');
 const alert = document.getElementById('alert');
 const imageDisplay = document.getElementById('display');
 const sound = document.getElementById('sound-ding');
+const countSound = document.getElementById('countsound');
 let timerinterval;
 
 
@@ -31,13 +32,13 @@ function startTimer(value){
 
     selectedTime--;
 
-  
 
     if(selectedTime < 0){
       clearInterval(timerinterval)
       alert.textContent = 'Your egg is done!'
       imageDisplay.src = `images/${value}.png`;
       sound.play();
+      
 
 
 
@@ -83,3 +84,7 @@ bottonSound.forEach(element => {
     element.addEventListener('click', clickBottonSound);
     
   });
+
+
+countSound.play();
+countSound.currentTime = 2.5
